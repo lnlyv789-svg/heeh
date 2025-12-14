@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Special! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <div class="music-control">
+        <button id="musicToggle" class="music-btn">
+            <i class="fas fa-volume-up"></i>
+            <span id="musicText">Musik ON</span>
+        </button>
+        <audio id="birthdayMusic" preload="auto" loop>
+            <source src="assets/sound.mp3" type="audio/mpeg">
+            <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-to-you-443.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Main Slides Container -->
+    <div class="slides-container">
+       <!-- Slide 1: Opening - Versi Sederhana -->
+        <div class="slide active" id="slide1">
+    <div class="slide-content">
+        <!-- Foto tanpa efek -->
+        <div class="photo-frame main-photo-frame" style="width: 300px; height: 300px; border: none; box-shadow: 0 15px 40px rgba(0,0,0,0.3); margin-bottom: 40px;">
+            <img src="assets/fck.jpg" alt="Special Photo" class="main-photo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
+        </div>
+        
+        <div class="message-box animate__animated animate__fadeInUp">
+            <h1 class="title">Happy Birthday! yang ke-19<span class="emoji">🎂</span></h1>
+            <h2 class="subtitle"> <span class="highlight" id="birthdayName">Tria Hapifah</span></h2>
+            <p class="date">🎉 This is your special day 🎉</p>
+            <p class="hint">Klik tombol di bawah untuk mulai petualangan!</p>
+        </div>
+        
+        <div class="slide-counter">1/6</div>
+    </div>
+    </div>
+        <!-- Slide 2: Apology & Excitement -->
+        <div class="slide" id="slide2">
+            <div class="slide-content">
+                <div class="photo-container">
+                    <div class="photo-frame apology-photo">
+                        <!-- FIXED: nailong2.jpg sudah benar (perhatikan: di folder ada nalong2.jpg) -->
+                        <img src="assets/nailong2.jpg" alt="Nailong 2" class="apology-img">
+                        <div class="photo-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+                
+                <div class="message-box">
+                    <div class="speech-bubble apology-bubble">
+                        <i class="fas fa-heartbeat bubble-heart"></i>
+                        <h3>Ada yang pengen aku bilang...</h3>
+                        <p class="apology-text">Sebenernya dari kemarin aku udah excited banget mau ngucapin, tapi karena satu dan lain hal jadi telat. but believe me, meskipun keliatannya biasa aja, in my heart like "WAHHHHH" Maaf ya telat, tapi semangatnya tetep 1000% or you!</p>
+                        <div class="bubble-tail"></div>
+                    </div>
+                    
+                    <div class="excitement-meter">
+                        <p>Level Excited:</p>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 100%"></div>
+                            <span class="meter-text">1000%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-counter">2/6</div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Wishes & Messages -->
+        <div class="slide" id="slide3">
+            <div class="slide-content">
+                <div class="double-photo-container">
+                    <div class="photo-pair">
+                        <div class="photo-frame wish-photo">
+                            <!-- FIXED: owl1.jpg diganti swt1.jpg (karena di folder namanya swt1.jpg) -->
+                            <img src="assets/owi1.jpg" alt="Owl Wisdom" class="wish-img">
+                            <div class="photo-label">Asbun</div>
+                        </div>
+                        <div class="photo-frame wish-photo">
+                            <!-- FIXED: meme5.jpg diganti memc5.jpg -->
+                            <img src="assets/meme5.jpg" alt="Meme Fun" class="wish-img">
+                            <div class="photo-label">cheerfulness</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="message-box wishes-box">
+                    <h3 class="section-title">Hopes and Prayers for You ✨</h3>
+                    
+                    <div class="wishes-list">
+                        <div class="wish-item">
+                            <i class="fas fa-hands-praying"></i>
+                            <p>Semoga You have always been a dutiful child to your parents, menjadi kebanggaan keluarga.</p>
+                        </div>
+                        <div class="wish-item">
+                            <i class="fas fa-star"></i>
+                            <p>Semoga success accompanies your every step, dimudahkan dalam segala urusan dan rezeki selalu melimpah.</p>
+                        </div>
+                        <div class="wish-item">
+                            <i class="fas fa-heart"></i>
+                            <p>Semoga health and happiness always accompany you, dijauhkan dari segala marabahaya dan kesusahan.</p>
+                        </div>
+                        <div class="wish-item">
+                            <i class="fas fa-laugh-beam"></i>
+                            <p>Semoga laughter and joy never leave your day, always dikelilingi orang-orang yang baik dan tulus.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-counter">3/6</div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Adventure & Gift -->
+        <div class="slide" id="slide4">
+            <div class="slide-content">
+                <div class="adventure-photos">
+                    <div class="adventure-grid">
+                        <div class="adventure-item">
+                            <!-- FIXED: sword1.jpg sudah benar -->
+                            <img src="assets/sword1.jpg" alt="Sword Adventure 1" class="adventure-img">
+                            <div class="adventure-label">adventure 1</div>
+                        </div>
+                        <div class="adventure-item main-adventure">
+                            <!-- FIXED: Fotbar.jpg diganti Fctibar.jpg -->
+                            <img src="assets/Fotbar.jpg" alt="Foto Bersama" class="adventure-img">
+                            <div class="adventure-label">our moment</div>
+                        </div>
+                        <div class="adventure-item">
+                            <!-- FIXED: sword2.jpg sudah benar -->
+                            <img src="assets/sword2.jpg" alt="Sword Adventure 2" class="adventure-img">
+                            <div class="adventure-label">adventure 2</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="message-box adventure-box">
+                    <h3 class="section-title">Akhir-akhir ini... 🏞️</h3>
+                    
+                    <div class="adventure-text">
+                        <p>Akhir-akhir ini kamu sering banget ke Bogor ya? Ntah itu naik gunung, ke curug, ataupun ngecamp... Seru sih lihat fotonya, tapi pasti cape dan repot kalau gak ada bantuan.</p>
+                        
+                        <p class="highlight-text">But don't worry!Because I have something special for you...</p>
+                        
+                        <div class="mystery-box">
+                            <i class="fas fa-gift"></i>
+                            <p>Something special is waiting for you in the next slide!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-counter">4/6</div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Gift Box -->
+        <div class="slide" id="slide5">
+            <div class="slide-content">
+                <div class="gift-container">
+                    <div class="gift-header">
+                        <h3 class="gift-title">Guess what??</h3>
+                        <p class="gift-subtitle">if you're right, you'll get it!</p>
+                    </div>
+                    
+                    <div class="gift-box" id="giftBox">
+                        <div class="gift-lid" id="giftLid">
+                            <div class="ribbon">
+                                <div class="ribbon-knot"></div>
+                            </div>
+                        </div>
+                        <div class="gift-body">
+                            <span class="gift-text">🎁</span>
+                        </div>
+                        <div class="gift-shadow"></div>
+                    </div>
+                    
+                    <button class="open-gift-btn" id="openGiftBtn">
+                        <i class="fas fa-hand-pointer"></i> Buka Kado!
+                    </button>
+                    
+                    <div class="gift-message hidden" id="giftMessage">
+                        <div class="revealed-content">
+                            <!-- FIXED: sword1.jpg sudah benar -->
+                            <img src="assets/treking pole.jpeg" alt="Trekking Pole" class="gift-img">
+                            <h4>Tracking Pole!</h4>
+                            <p class="gift-note">Nyussul nanti selasa...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-counter">5/6</div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Birthday Cake & Photos -->
+        <div class="slide" id="slide6">
+            <div class="slide-content">
+                <div class="birthday-container">
+                    <div class="cake-container">
+                        <div class="cake">
+                            <div class="cake-layer bottom"></div>
+                            <div class="cake-layer middle"></div>
+                            <div class="cake-layer top"></div>
+                            <div class="candle" id="candle">
+                                <div class="flame" id="flame"></div>
+                                <div class="sparkle"></div>
+                            </div>
+                        </div>
+                        
+                        <button class="blow-btn" id="blowCandleBtn">
+                            <i class="fas fa-wind"></i> Tiup Lilinnya!
+                        </button>
+                        
+                        <p class="cake-instruction">Tiup lilin untuk buka kejutan spesial!</p>
+                    </div>
+                    
+                    <div class="photos-grid hidden" id="photosGrid">
+                        <h3 class="photos-title">gk tau apaan tapi lucu tau poto-potonya </h3>
+                        <div class="grid-container" id="gridContainer">
+                            <!-- Photos will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="final-message">
+                    <p>Thanks for everything!</p>
+                    <p class="signature">- for someone yang always support you -</p>
+                </div>
+                
+                <div class="slide-counter">6/6</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation">
+        <button class="nav-btn prev-btn" id="prevBtn">
+            <i class="fas fa-chevron-left"></i> Preview
+        </button>
+        
+        <div class="progress-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+            <span class="dot" data-slide="5"></span>
+        </div>
+        
+        <button class="nav-btn next-btn" id="nextBtn">
+            Next <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-palette"></i>
+    </button>
+
+    <!-- Confetti Container -->
+    <div id="confettiContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
